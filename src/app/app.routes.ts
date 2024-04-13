@@ -9,5 +9,6 @@ export const routes: Routes = [
     { path: 'home', component: HomeComponent },
     { path: 'value-conversion', component: ValueConversionComponent },
     { path: 'work-description', component: WorkDescriptionComponent },
-    { path: '**', component: NotFoundComponent } // for Not Found
+    {path: '404', component: NotFoundComponent}, // for Not Found
+    {path: '**', redirectTo: '/404'}
 ];
